@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Ваша анкета</title>
+        <style>
+            label{
+                display: inline-block;
+                width: 100px;
+            }
+            input,label{
+                margin: 5px;
+            }
+
+        </style>
+</head>
+
+<body>
+    <h1>Анкета</h1>
+    <img src="anketa.jpg"
+    width="250"
+        
+    alt="ошибка файла">
+    <p><i><b><span style="color: rgb(75, 117, 255);">Данная анкета заполняется по просьбе <a href="http:\\vk.com/yurbanoid2" target="_blank">Юрия Братишина</a></span></i></b></p>
+    <p><b>Пожалуйста, введите свои данные</b></p>
+    <form action="#">
+        <fieldset style="width: max-content;">
+        <legend>ФИО</legend><br>
+        <label for="name">Имя<span style="color: red;">*</label>
+        <input type="text" required><br>
+        <label for="surname">Фамилия<span style="color: red;">*</label>
+        <input type="text"><br>
+        <label for="otchestvo">Отчество<span style="color: red;">* </label>
+        <input type="email" required><br>
+        </fieldset>
+        <fieldset style="width: max-content;">
+            <legend>Персональная информация</legend>
+            <label for="age">Возраст<span style="color: red;">*</label>
+                <input type="number" required min="14" max="100"><br>
+                <label for="sex">Пол</label>
+                <select name="sex"><br>
+                    <option>мужской</option>
+                    <option>женский</option>
+                </select><br>
+                <label>Ваши личные качества</label>
+                <textarea cols="20" rows="5"></textarea><br>
+            </fieldset>
+        <fieldset style="width: max-content;">
+            <legend>Ваши любимые животные</legend>
+            <label for="зебра"></label><input type="checkbox" id="зебра">зебра<br>
+            <label for="котейка"></label><input type="checkbox" id="котейка">котейка<br>
+            <label for="собакен"></label><input type="checkbox" id="собакен">собакен<br>
+            <label for="хомяк"></label><input type="checkbox" id="хомяк">хомяк<br>
+            <label for="лошадь"></label><input type="checkbox" id="лошадь">лошадь<br>
+            <label for="другое"></label><input type="checkbox" id="другое">другое<br>
+            <label>Перечислить</label>
+            <textarea cols="20" rows="5"></textarea><br>
+                 </fieldset>
+                 <fieldset style="width: max-content;">
+            <legend>Ваши увлечения</legend>
+            <label for="спорт"></label><input type="checkbox" id="спорт">спорт<br>
+            <label for="рисование"></label><input type="checkbox" id="рисование">рисование<br>
+            <label for="чтение"></label><input type="checkbox" id="чтение">чтение<br>
+            <label for="туризм"></label><input type="checkbox" id="туризм">туризм<br>
+            <label for="IT"></label><input type="checkbox" id="IT">IT<br>
+            <label for="другое"></label><input type="checkbox" id="другое">другое<br>
+            <label>Перечислить</label>
+            <textarea cols="20" rows="5"></textarea><br>
+                 </fieldset>
+<input type="submit" value="отправить"><br>
+<input type="reset" value="стереть"><br>
+            </fieldset><form>
+            </body>
+            </html>
